@@ -66,8 +66,8 @@ jobs:
                                                       multi_patient_version:multi_patient_api_stu1 \
                                       --groups 4 7 \
                                       --inputs "url:localhost:8080/reference-server/r4" \
-                                               patient_id:85 \
-                                               additional_patient_ids:85,355 \
+                                               patient_id:FORCE_FAIL \
+                                               additional_patient_ids:FORCE_FAIL \
                                                "smart_credentials:{\"access_token\":\"SAMPLE_TOKEN\"}" \
                                                "bulk_server_url:http://localhost:8080/reference-server/r4" \
                                                "bulk_token_endpoint:http://localhost:8080/reference-server/oauth/token" \
@@ -87,7 +87,7 @@ jobs:
                                       --groups 10 8 \
                                       --inputs "url:localhost:8080/reference-server/r4" \
                                                patient_id:FORCE_FAIL \
-                                               additional_patient_ids:85,355 \
+                                               additional_patient_ids:FORCE_FAIL \
                                                "smart_credentials:{\"access_token\":\"SAMPLE_TOKEN\"}" \
                                                "bulk_server_url:http://localhost:8080/reference-server/r4" \
                                                "bulk_token_endpoint:http://localhost:8080/reference-server/oauth/token" \
